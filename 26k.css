@@ -1,0 +1,368 @@
+@charset "utf-8";
+html, body {
+	background-color: #f3f4f5;
+}
+li {
+	list-style-type: none;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+* {
+	font-family: Avenir, 中ゴシックBBB, Noto Sans JP, 游ゴシック, Yu Gothic, YuGothic, Hiragino Kaku Gothic ProN, Hiragino Kaku Gothic Pro, メイリオ, Meiryo, ＭＳ ゴシック, sans-serif;
+}
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.l-col__flex {
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+	flex-basis: 0;
+}
+img {
+	border: 0px;
+}
+p {
+	colo: #4e575c;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+	margin-inline-start: 0px;
+	margin-inline-end: 0px;
+	-webkit-font-smoothing: antialiased;
+}
+a {
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+	margin-block-start: 1em;
+	margin-block-end: 1em;
+}
+.margin {
+	margin-bottom: 3vh;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+}
+.bold {
+	font-weigh: bold;
+}
+p {
+	margin: 10px;
+	line-height: 1.7;
+}
+#wrap {
+	position: relative;
+	overflow-x: hidden;
+	z-index: 2;
+}
+.whtext {
+	color: #f2f3f4;
+}
+#l__container {
+	margin-top: 50px;
+}
+#l__container__50 {
+	float: left;
+	width: 50%;
+}
+#l__container__inner {
+	margin-bottom: 50px;
+}
+.breadcrumb {
+	margin-left: 0;
+	padding: 20px;
+	overflow: hidden;
+	margin-top: 150px;
+	background-color: #1da1f2;
+}
+.breadcrumb li {
+	display: inline;
+	list-style: none;
+}
+.breadcrumb li:after {
+	content: '>';
+	padding: 8px;
+	color: #f2f3f4;
+}
+.breadcrumb li:last-child:after {
+	content: '';
+}
+.breadcrumb li a {
+	text-decoration: none;
+	color: #ffffff;
+}
+.breadcrumb li a:hover {
+	text-decoration: none;
+}
+.tab__title {
+	font-size: 5vw;
+	padding: 0 0 50px 0;
+}
+.panel__title {
+	position: relative;
+	line-height: 1.5;
+	font-size: 3.9vw;
+	letter-spacing: 0.1em;
+}
+@media (min-width: 1280px) {
+	.panel__title {
+		font-size: 50px;
+	}
+}
+.panel__text {
+	font-size: 2.3vw;
+	letter-spacing: 0.05em;
+	margin: 1em 0;
+}
+@media (min-width: 1280px) {
+	.panel__text {
+		font-size: 29.5px;
+	}
+}
+.text {
+	font-size: 2.8vw;
+	letter-spacing: 0.05em;
+	margin: 1em 0;
+}
+@media (min-width: 1280px) {
+	.text {
+		font-size: 36px;
+	}
+}
+.header {
+	position: absolute;
+	width: 100%;
+	max-width: 100%;
+	top: 0px;
+	left: 0px;
+	overflow: hidden;
+	z-index: 90;
+	color: #4e575c;
+}
+.header .l-container {
+	height: 150px;
+}
+.nav-list__target:hover {
+	color: #1da1f2;
+	webkit-transition: color .3s ease;
+	-o-transition: color .3s ease;
+	transition: color .3s ease;
+}
+.l-container__inner {
+	padding-left: 5%;
+	padding-right: 5%;
+}
+@media screen and (max-width: 1280px) {
+	.l-container__inner {
+		padding-left: 16px;
+		padding-right: 16px;
+	}
+}
+.header .l-header__target {
+	width: 270px;
+	background: no-repeat;
+}
+h1 a {
+	text-decoration: none;
+}
+.center {
+	text-align: center;
+	vertical-align: middle;
+}
+.a-center {
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+.left {
+	text-align: left;
+}
+li {
+	text-align: center;
+	vertical-align: middle;
+	float: left;
+	height: 10px;
+}
+.side {
+	margin: 0 3vw 0 3vw;
+}
+.header {
+	background-image: url(img/header.jpg);
+	background-size: cover;
+	opacity: 1;
+}
+.header .nav-list__target:before {
+	background-color: #71797d;
+	z-index: 1;
+	opacity: 1;
+}
+.header .nav-list:first-child {
+	width: 25%;
+}
+.header .nav-list__target:before, .header .nav-list__target:after {
+	display: block;
+	width: 50vw;
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0px;
+	background-color: #71797d;
+}
+.header .l-header-nav {
+	position: relative;
+	padding-top: 40px;
+}
+.l-cols {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+}
+.header .nav-list:first-child {
+	width: 30%;
+}
+.header .nav-list__target.is-current {
+	color: #e7152d;
+}
+.header .nav-list__target {
+	display: block;
+	position: relative;
+	height: 100%;
+	padding-bottom: 10px;
+	line-height: 1;
+}
+.header .nav-list__target:hover {
+	color: #e7152d;
+}
+.nav-list__label:hover {
+	color: #e7152d;
+	transition: color .8s;
+}
+.nav-list__label {
+	transition: color .3s;
+}
+.header .nav-list:first-child .nav-list__title, .header .nav-list:first-child .nav-list__label {
+	visibility: hidden;
+	pointer-events: none;
+}
+.header .nav-list__number {
+	position: absolute;
+	bottom: 1em;
+	left: 0;
+	font-size: 10px;
+	letter-spacing: 0.025em;
+}
+.header .nav-list__description {
+	display: none;
+}
+.f-t-fonts {
+	font-family: "TazuganeGothicStdN-Bold", sans-serif;
+	font-weight: Bold;
+}
+.header .nav-list {
+	margin-right: 20px;
+}
+.header .nav-list__target:before {
+	background-color: #71797d;
+	z-index: 1;
+}
+.smalltext {
+	font-size: 1.5vw;
+	font-weight: 100;
+}
+#copyright {
+	font-size: 1.2vw;
+	color: #F2F3F4;
+	padding-bottom: 15px;
+}
+@media screen and (min-width: 1280px) {
+	#copyright {
+		font-size: 15px;
+	}
+}
+#footer .l-row {
+	margin-bottom: 30px;
+}
+#footer .l-cols {
+	display: -webkit-box;
+	display: flex;
+}
+#footer .l-col:first-child {
+	width: 40%;
+}
+#footer .l-col:nth-child(2) {
+	padding-right: 10px;
+	width: 60%;
+}
+.h1_logo {
+	width: 32vw;
+}
+@media screen and (max-width: 1280px) {
+	#footer .l-col:last-child {
+		width: 100%;
+	}
+}
+#footer .logo {
+	margin-bottom: 15px;
+}
+#footer .logo img {
+	width: 37.5vw;
+}
+#footer {
+	padding: 100px 0px 100px 50px;
+	color: #f3f4f5;
+	font-size: 1.2vw;
+	clear: both;
+	background-color: #4e575c;
+}
+.btext {
+	font-weight: bold;
+}
+#page-top {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	font-size: 100%;
+	z-index: 200;
+}
+#page-top a {
+	opacity: .7;
+	background-color: #f3f4f5;
+	text-decoration: none;
+	color: #4e575c;
+	width: 50px;
+	padding: 10px 0;
+	text-align: center;
+	display: block;
+	border-radius: 40px;
+	-webkit-transition: .3s ease;
+	transition: .3s ease;
+}
+#page-top a:hover {
+	transform: scale(1.2);
+	opacity: 1;
+	text-decoration: none;
+	-webkit-transition: .8s ease;
+	-o-transition: .8s ease;
+	transition: .8s ease;
+}
+.animation {
+	animation-name: fadein;
+	animation-duration: 1.5s;
+	animation-iteration-count: 1;
+	overflow: hidden;
+}
+@keyframes fadein {
+	from {
+		opacity: 0;
+		transform: translateY(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<!--これがHPの作者名-->
+	<meta name="author" content="にるく">
+	<meta name="description" content="連絡先">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="description" content="にるくさんち | !description!">
+	<link rel="canonical" href="https://26nilk.com/">
+	<link rel="icon" href="icon/favicon.ico">
+	<link rel="apple-touch-icon" href="icon/icon.png">
+	<link rel="stylesheet" href="26k.css">
+	<meta property="og:site_name" content="にるくさんち | ホーム">
+	<meta property="og:title" content="にるくさんち | ホーム">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="!site-url!" />
+	<meta property="og:image" content="!image-url!" />
+	<title>にるくさんち | ホーム</title>
+</head>
+<body class="index">
+	<div id="wrap">
+		<p class="f-t-fonts" id="page-top"><a href="#wrap" onclick="$('html,body').animate({ scrollTop: 0 }); return false;">∧</a></p>
+		<header id="header__static" class="header">
+			<div class="l-container">
+				<div class="l-container__inner side">
+					<nav class="l-header-nav">
+						<ul class="nav-group l-cols">
+							<li class="nav-list l-col__static"> <a class="nav-list__target" href="#wrap">
+      <img src="img/h1_logo.png" class="h1_logo">
+                </a>
+								<li class="nav-list l-col__flex"> <a class="nav-list__target" href="" >
+							<small class="smalltext btext shadow">トップページ</small></a></li>
+								<li class="nav-list l-col__flex"> <a class="nav-list__target" href="">
+							<small class="smalltext btext shadow">裏話</small></a></li>
+								<li class="nav-list l-col__flex"> <a class="nav-list__target" href="JisakuGamenoProgress.html">
+							<small class="smalltext btext shadow">次作ゲームの進捗と残っているタスク</small></a></li>
+								<li class="nav-list l-col__flex"> <a class="nav-list__target" href="#wrap">
+							<small class="smalltext btext shadow">過去に作ったソフト</small></a></li>
+								<li class="nav-list l-col__flex"> <a class="nav-list__target" href="Contact.html">
+							<small class="smalltext btext shadow">連絡先</small></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<section id="breadcrumb">
+			<ul class="breadcrumb">
+				<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb"> <a href="#wrap" itemprop="url">
+				<span itemprop="title" class="f-t-fonts nav-list__label">ホーム</span></a></li>
+			</ul>
+		</section>
+		<section id="main-stage">
+			<div id="l__container" class="side">
+				<div id="l__container__inner">
+					<p class="panel__title animation margin">工事中だよ♡</p>
+				</div>
+		</section> <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeEijpg3046JGM3Yfs5sr2RPGYcUx_UupGLRK1NnFN6Ke2JWg/viewform?embedded=true" width="100%" height="800" style="max-width: 1280px !important;" frameborder="0">読み込んでいます...</iframe>
+		<footer id="footer">
+			<div class="l-cols">
+				<div class="l-col">
+					<h1 class="logo"> <a href="#wrap">
+<img src="img/h1_logo.png" alt="にるくさんち">
+</a> </h1>
+				</div>
+			</div> <address id="copyright">&copy; にるく 2018-2019 ALL RIGHTS RESERVED.</address> </div>
+		</footer>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$('a[href^=#]').click(function(){
+			var speed = 800;
+			var href= $(this).attr("href");
+			var target = $(href == "#" || href == "" ? 'html' : href);
+			var position = target.offset().top;
+			$("html, body").animate({scrollTop:position}, speed, "swing");
+			return false;
+		});
+	});
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="js/parallax.js"></script>
+</html>
